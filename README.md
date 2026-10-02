@@ -13,4 +13,4 @@ O formulário usa `mailto:`: ele abre o aplicativo de email do visitante com o d
 - Conferir a política de registros técnicos do provedor de hospedagem escolhido. A página não inclui cookies ou analytics próprios.
 - Publicar o conteúdo de `dist/` em HTTPS e usar a URL pública no cadastro do app na App Store.
 
-Os SVGs de Caju e Lupa, além das fontes Fraunces Soft e Nunito, foram copiados dos recursos do próprio app.
+Os SVGs de Sagu e Pudim, além das fontes Fraunces Soft e Nunito, foram copiados dos recursos do próprio app.
