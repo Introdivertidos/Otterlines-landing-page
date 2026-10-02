@@ -1,4 +1,15 @@
 const contactForm = document.querySelector('#contact-form');
+const isEnglish = document.documentElement.lang.toLowerCase().startsWith('en');
+const languageSwitch = document.querySelector('[data-language-switch]');
+
+const updateLanguageSwitch = () => {
+  if (languageSwitch) {
+    languageSwitch.href = `${isEnglish ? 'index.html' : 'en.html'}${window.location.hash}`;
+  }
+};
+
+updateLanguageSwitch();
+window.addEventListener('hashchange', updateLanguageSwitch);
 
 contactForm?.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -13,8 +24,8 @@ contactForm?.addEventListener('submit', (event) => {
 
   const subject = `Otterlines — ${topic}`;
   const body = [
-    `Nome: ${name || 'Não informado'}`,
-    `Email para resposta: ${email}`,
+    `${isEnglish ? 'Name' : 'Nome'}: ${name || (isEnglish ? 'Not provided' : 'Não informado')}`,
+    `${isEnglish ? 'Reply-to email' : 'Email para resposta'}: ${email}`,
     '',
     message,
   ].join('\n');

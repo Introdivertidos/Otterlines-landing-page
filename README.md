@@ -1,6 +1,6 @@
 # Otterlines — suporte e privacidade
 
-Página estática em português. O conteúdo publicável está em `dist/`; não há etapa de build nem dependências externas.
+Página estática em português (`dist/index.html`) e inglês (`dist/en.html`). O conteúdo publicável está em `dist/`; não há etapa de build nem dependências externas. O seletor PT/EN mantém a seção aberta pelo endereço da página.
 
 ## Contato
 
