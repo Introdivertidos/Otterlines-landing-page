@@ -22,7 +22,7 @@ contactForm?.addEventListener('submit', (event) => {
   const topic = String(data.get('topic') || '').trim();
   const message = String(data.get('message') || '').trim();
 
-  const subject = `Entrelinhas — ${topic}`;
+  const subject = `${isEnglish ? 'Otterlines' : 'Entrelinhas'} — ${topic}`;
   const body = [
     `${isEnglish ? 'Name' : 'Nome'}: ${name || (isEnglish ? 'Not provided' : 'Não informado')}`,
     `${isEnglish ? 'Reply-to email' : 'Email para resposta'}: ${email}`,
