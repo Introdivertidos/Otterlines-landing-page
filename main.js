@@ -22,7 +22,7 @@ contactForm?.addEventListener('submit', (event) => {
   const topic = String(data.get('topic') || '').trim();
   const message = String(data.get('message') || '').trim();
 
-  const subject = `Otterlines — ${topic}`;
+  const subject = `Entrelinhas — ${topic}`;
   const body = [
     `${isEnglish ? 'Name' : 'Nome'}: ${name || (isEnglish ? 'Not provided' : 'Não informado')}`,
     `${isEnglish ? 'Reply-to email' : 'Email para resposta'}: ${email}`,
@@ -30,7 +30,7 @@ contactForm?.addEventListener('submit', (event) => {
     message,
   ].join('\n');
 
-  window.location.href = `mailto:otterlines.app@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  window.location.href = `mailto:contato@appentrelinhas.com.br?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
 
 document.querySelector('#year').textContent = String(new Date().getFullYear());
