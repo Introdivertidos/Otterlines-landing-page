@@ -18,7 +18,7 @@ em{font-style:normal;color:#bb7359}
 .nav-row,.site-header nav,.brand{display:flex;align-items:center}
 .nav-row{height:100%;justify-content:space-between;gap:20px}
 .brand{font-family:Fraunces,Georgia,serif;font-size:27px;letter-spacing:-.06em;line-height:1;gap:10px;white-space:nowrap}
-.brand-mark{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--brown);color:#fff0dc;font:24px Nunito;line-height:1;transform:rotate(-12deg)}
+.brand-mark{display:block;width:32px;height:32px;object-fit:contain;flex-shrink:0}
 .brand-dot{color:#d78769}
 .site-header nav{gap:25px;font-size:14px;font-weight:700}
 .site-header nav>a{transition:color .2s}
